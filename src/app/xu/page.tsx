@@ -969,7 +969,7 @@ export function StandaloneResearchModule({ module }: { module: ModuleKey }) {
   return (
     <main className="xu-page research-detail-page">
       <header className="topbar detail-topbar">
-        <Link href="/" className="brand" aria-label="返回研究成果展示平台首页"><span className="brand-mark">R</span><span><strong>研究成果展示平台</strong><small>Research Outputs</small></span></Link>
+        <Link href="/" className="brand" aria-label="返回基于多元因素影响的病原体跨尺度时空传播控制技术首页"><span className="brand-mark">R</span><span><strong>基于多元因素影响的病原体跨尺度时空传播控制技术</strong><small>Research Outputs</small></span></Link>
         <nav aria-label="页面导航"><Link href="/">成果首页</Link><a href="#calculation">计算与结果</a><a href="#reference">参数说明</a></nav>
       </header>
 
@@ -987,7 +987,7 @@ export function StandaloneResearchModule({ module }: { module: ModuleKey }) {
         </div>
       </section>
 
-      <footer><div><strong>研究成果展示平台</strong><span>{meta.title}</span></div><p>数值结果应结合原论文和数据质量解释</p></footer>
+      <footer><div><strong>基于多元因素影响的病原体跨尺度时空传播控制技术</strong><span>{meta.title}</span></div><p>数值结果应结合原论文和数据质量解释</p></footer>
     </main>
   );
 }

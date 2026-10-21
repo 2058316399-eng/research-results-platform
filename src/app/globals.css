@@ -59,15 +59,18 @@ a {
   background: #fff;
   border-bottom: 1px solid var(--line);
   display: flex;
+  gap: 24px;
   justify-content: space-between;
   min-height: 76px;
   padding: 0 clamp(22px, 5vw, 76px);
+  padding-block: 14px;
 }
 
 .portal-brand {
   align-items: center;
   display: flex;
   gap: 13px;
+  min-width: 0;
 }
 
 .portal-brand > span {
@@ -78,6 +81,7 @@ a {
   font-family: Georgia, serif;
   font-size: 21px;
   font-weight: 700;
+  flex-shrink: 0;
   height: 40px;
   justify-content: center;
   width: 40px;
@@ -86,11 +90,14 @@ a {
 .portal-brand strong {
   font-size: 17px;
   letter-spacing: 0.03em;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .portal-header nav {
   display: flex;
   gap: 28px;
+  flex-shrink: 0;
 }
 
 .portal-header nav a {
@@ -124,11 +131,13 @@ a {
 
 .portal-intro h1 {
   font-family: Georgia, "Noto Serif SC", serif;
-  font-size: clamp(46px, 6.4vw, 86px);
+  font-size: clamp(32px, 3.8vw, 56px);
   font-weight: 500;
-  letter-spacing: -0.05em;
-  line-height: 1.05;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
   margin: 0;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
 }
 
 .portal-intro > p {
@@ -250,7 +259,7 @@ a {
   }
 
   .portal-intro h1 {
-    font-size: 46px;
+    font-size: clamp(30px, 7.8vw, 40px);
   }
 
   .portal-results {
@@ -287,7 +296,9 @@ main {
 }
 
 .detail-topbar {
-  grid-template-columns: 1fr auto;
+  column-gap: 24px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding-block: 12px;
 }
 
 .standalone-module-section {
@@ -341,6 +352,8 @@ main {
   display: flex;
   gap: 12px;
   justify-self: start;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .brand-mark {
@@ -352,6 +365,7 @@ main {
   font-family: Georgia, serif;
   font-size: 22px;
   font-weight: 700;
+  flex-shrink: 0;
   height: 40px;
   justify-content: center;
   width: 40px;
@@ -361,11 +375,14 @@ main {
   display: flex;
   flex-direction: column;
   line-height: 1.2;
+  min-width: 0;
 }
 
 .brand strong {
   font-size: 15px;
   letter-spacing: 0.02em;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .brand small {
@@ -2950,6 +2967,7 @@ footer p {
     align-items: flex-start;
     flex-direction: column;
     gap: 12px;
+    grid-template-columns: minmax(0, 1fr);
     padding-block: 13px;
   }
 
@@ -3092,5 +3110,25 @@ footer p {
   .siqh-source-images,
   .siqh-source-images.has-three {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 380px) {
+  .xu-results {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .xu-status-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-width: 0;
+  }
+
+  .xu-status-row article {
+    min-width: 0;
+  }
+
+  .xu-status-row article > strong,
+  .xu-status-row article > small {
+    overflow-wrap: anywhere;
   }
 }

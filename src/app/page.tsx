@@ -61,9 +61,9 @@ export default function ResearchResultsHome() {
   return (
     <main className="portal-page">
       <header className="portal-header">
-        <Link href="/" className="portal-brand" aria-label="研究成果展示平台首页">
+        <Link href="/" className="portal-brand" aria-label="基于多元因素影响的病原体跨尺度时空传播控制技术首页">
           <span>R</span>
-          <strong>研究成果展示平台</strong>
+          <strong>基于多元因素影响的病原体跨尺度时空传播控制技术</strong>
         </Link>
         <nav aria-label="成果导航"><a href="#results">研究成果</a><a href="#about">平台说明</a></nav>
       </header>
@@ -71,7 +71,7 @@ export default function ResearchResultsHome() {
       <section className="portal-intro" id="about">
         <div>
           <p>RESEARCH OUTPUTS · COMPUTATIONAL MODELS</p>
-          <h1>研究成果展示平台</h1>
+          <h1>基于多元因素影响的病原体跨尺度时空传播控制技术</h1>
         </div>
         <p>集中呈现传播动力学与复杂网络社区检测研究。六项成果分别进入独立页面，参数、计算结果与方法说明互不混排。</p>
       </section>
@@ -87,7 +87,7 @@ export default function ResearchResultsHome() {
         ))}
       </section>
 
-      <footer className="portal-footer"><strong>研究成果展示平台</strong><span>传播动力学 · 分数阶系统 · 复杂网络</span></footer>
+      <footer className="portal-footer"><strong>基于多元因素影响的病原体跨尺度时空传播控制技术</strong><span>传播动力学 · 分数阶系统 · 复杂网络</span></footer>
     </main>
   );
 }

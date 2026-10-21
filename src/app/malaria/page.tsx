@@ -363,10 +363,10 @@ export default function Home() {
   return (
     <main className="research-detail-page malaria-page">
       <header className="topbar detail-topbar">
-        <Link href="/" className="brand" aria-label="返回研究成果展示平台首页">
+        <Link href="/" className="brand" aria-label="返回基于多元因素影响的病原体跨尺度时空传播控制技术首页">
           <span className="brand-mark">R</span>
           <span>
-            <strong>研究成果展示平台</strong>
+            <strong>基于多元因素影响的病原体跨尺度时空传播控制技术</strong>
             <small>Research Outputs</small>
           </span>
         </Link>
@@ -737,7 +737,7 @@ export default function Home() {
 
       <footer>
         <div>
-          <strong>研究成果展示平台</strong>
+          <strong>基于多元因素影响的病原体跨尺度时空传播控制技术</strong>
           <span>疟疾传播动力学</span>
         </div>
         <p>计算结果不构成医疗建议</p>

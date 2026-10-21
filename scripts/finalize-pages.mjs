@@ -16,7 +16,7 @@ const titles = {
 for (const [route, title] of Object.entries(titles)) {
   const directory = path.join(output, route);
   await mkdir(directory, { recursive: true });
-  await writeFile(path.join(directory, "index.html"), html.replace("<title>研究成果展示平台</title>", `<title>${title}｜研究成果展示平台</title>`));
+  await writeFile(path.join(directory, "index.html"), html.replace("<title>基于多元因素影响的病原体跨尺度时空传播控制技术</title>", `<title>${title}｜基于多元因素影响的病原体跨尺度时空传播控制技术</title>`));
 }
 await writeFile(path.join(output, "404.html"), html);
 await writeFile(path.join(output, ".nojekyll"), "");

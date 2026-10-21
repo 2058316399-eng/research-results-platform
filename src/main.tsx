@@ -21,11 +21,11 @@ function CurrentPage() {
   if (!route) return <Home />;
   if (route === "malaria") return <Malaria />;
   if (route in modules) return <StandaloneResearchModule module={route as keyof typeof modules} />;
-  return <main className="portal-page"><h1>未找到页面</h1><p><SiteLink href="/">返回研究成果展示平台首页</SiteLink></p></main>;
+  return <main className="portal-page"><h1>未找到页面</h1><p><SiteLink href="/">返回基于多元因素影响的病原体跨尺度时空传播控制技术首页</SiteLink></p></main>;
 }
 
 const title = route === "malaria" ? "疟疾传播动力学" : modules[route as keyof typeof modules];
-document.title = title ? `${title}｜研究成果展示平台` : "研究成果展示平台";
+document.title = title ? `${title}｜基于多元因素影响的病原体跨尺度时空传播控制技术` : "基于多元因素影响的病原体跨尺度时空传播控制技术";
 const root = document.getElementById("root");
 if (!root) throw new Error("页面缺少应用入口");
 createRoot(root).render(<CurrentPage />);
